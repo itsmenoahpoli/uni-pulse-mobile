@@ -6,7 +6,7 @@ import axios, {
 } from "axios";
 
 const instance: AxiosInstance = axios.create({
-  baseURL: "https://katig-server-production.up.railway.app/api/v1/",
+  baseURL: "",
 });
 
 instance.interceptors.request.use(
