@@ -12,7 +12,7 @@ export default (): JSX.Element => {
         className="absolute top-0 bottom-0 left-0 right-0"
       />
 
-      <View className="flex-1 justify-between items-center">
+      <View className="flex-1 justify-between items-center relative">
         <View className="h-1/2 flex justify-center">
           <AppLogo />
           <Text className="text-xl text-white text-center font-bold mt-5">
@@ -20,10 +20,14 @@ export default (): JSX.Element => {
           </Text>
         </View>
 
-        <View className="h-1/2 w-full px-5">
+        <View className="h-1/2 w-full pt-[30px] px-5">
           <Slot />
         </View>
       </View>
+
+      <Text className="text-xs text-white absolute bottom-6 left-6">
+        App Version 1.0.1 (beta)
+      </Text>
     </SafeAreaView>
   );
 };

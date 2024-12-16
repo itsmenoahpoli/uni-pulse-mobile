@@ -38,7 +38,8 @@
     "expo-notifications": "~0.28.19",
     "expo-device": "~6.0.2",
     "react-native-webview": "13.8.6",
-    "expo-linear-gradient": "~13.0.2"
+    "expo-linear-gradient": "~13.0.2",
+    "expo-checkbox": "~3.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",

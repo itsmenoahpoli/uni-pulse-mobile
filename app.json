@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "KATIG",
-    "slug": "katig-mobile-app",
+    "name": "UniPulse",
+    "slug": "uni-pulse",
     "version": "1.0.1",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -16,7 +16,7 @@
     "experiments": {
       "tsconfigPaths": true
     },
-    "scheme": "katig-app",
+    "scheme": "uni-pulse",
     "plugins": ["expo-router"],
     "build": {
       "preview": {
@@ -36,14 +36,6 @@
         "distribution": "internal"
       },
       "production": {}
-    },
-    "extra": {
-      "eas": {
-        "projectId": "83ce1470-32d0-46cf-a40f-8c190e1f9c99"
-      }
-    },
-    "android": {
-      "package": "com.itsmenoahpoli.katigmobileapp"
     }
   }
 }
