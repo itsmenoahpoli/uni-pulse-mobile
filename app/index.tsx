@@ -7,7 +7,7 @@ export default (): JSX.Element => {
 
   const initializeSplashscreen = () => {
     setTimeout(() => {
-      router.push("auth/login");
+      router.push("home");
     }, 200);
   };
 

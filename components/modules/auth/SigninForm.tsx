@@ -1,22 +1,8 @@
 import React from "react";
-import {
-  TextInput,
-  View,
-  Text,
-  Pressable,
-  type TextInputProps,
-} from "react-native";
+import { View, Text, Pressable } from "react-native";
+import { AppInput, AppCheckbox } from "./../../app";
 
-const AppInput: React.FC<{} & TextInputProps> = (props) => {
-  return (
-    <TextInput
-      placeholder={props.placeholder}
-      className="w-full bg-white rounded-2xl p-4"
-    />
-  );
-};
-
-export const LoginForm: React.FC = () => {
+export const SigninForm: React.FC = () => {
   return (
     <View className="h-full">
       <View className="flex flex-col space-y-3">
@@ -28,6 +14,7 @@ export const LoginForm: React.FC = () => {
           <AppInput placeholder="Password" />
         </View>
         <View className="flex flex-row justify-between px-2">
+          <AppCheckbox label="Remember me" onValueChange={() => {}} />
           <Pressable>
             <Text className="text-xs text-white">Forgot Password?</Text>
           </Pressable>
