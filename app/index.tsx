@@ -1,10 +1,19 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { useRouter } from "expo-router";
+import { SplashScreen } from "@components/SplashScreen";
 
 export default (): JSX.Element => {
-  return (
-    <View>
-      <Text>Entry Page</Text>
-    </View>
-  );
+  const router = useRouter();
+
+  const initializeSplashscreen = () => {
+    setTimeout(() => {
+      router.push("auth/login");
+    }, 200);
+  };
+
+  React.useEffect(() => {
+    initializeSplashscreen();
+  }, []);
+
+  return <SplashScreen />;
 };
